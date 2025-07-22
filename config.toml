@@ -1,0 +1,22 @@
+[server]
+enable_http = true
+host = "0.0.0.0"
+port = 8080
+unix_socket = "/tmp/laplas.unix"
+timeout = "30s"
+
+[WatchDog]
+# ===================================
+# Блок настройки обработчика WatchDog
+# ===================================
+
+# В наносекундах или строкой "5m"
+PendingCheckInterval = "10s"
+RunningCheckInterval = "10s"
+FailedCheckInterval = "20s"
+
+
+
+[logging]
+level = "debug"
+format = "json"
